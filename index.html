@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sander Verhoeven</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#" id="logo">Sander</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div id="content">
+        <section>
+            <div id="titleWrap">
+                <span class="ityped"></span>
+            </div>
+            <div id="pfpic">
+                <img src="./assets/pfp.jpg" alt="profile picture">
+            </div>
+            <hr />
+            <p id="subtitle">
+                Creative media & game technologies
+            </p>
+
+            <div id="progressWrapper">
+                <label for="html">HTML:5</label>
+                <progress class="progressBar" id="html" max="100" value="80"></progress>
+
+                <label for="css">CSS3</label>
+                <progress class="progressBar" id="css" max="100" value="80"></progress>
+
+                <label for="php">PHP</label>
+                <progress class="progressBar" id="php" max="100" value="60"></progress>
+
+                <label for="Javascript">Javascript</label>
+                <progress class="progressBar" id="Javascript" max="100" value="70"></progress>
+
+                <label for="Typescript">Typescript</label>
+                <progress class="progressBar" id="Typescript" max="100" value="60"></progress>
+            </div>
+
+            <h2>My projects</h2>
+            <div class="projects">
+                <div class="container">
+                    <img src="./assets/project1.jpg" alt="project 1" class="image">
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text">My first project</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="container">
+                    <img src="./assets/project2.jpg" alt="project 2" class="image">
+                    <div class="overlay">
+                        <div class="text">My Second project</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="./assets/project3.jpg" alt="project 3" class="image">
+                    <a href="#">
+                        <div class="overlay">
+                            <div class="text">My third project</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="container">
+                    <img src="./assets/project4.jpg" alt="project 4" class="image">
+                    <div class="overlay">
+                        <div class="text">My fourth project</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

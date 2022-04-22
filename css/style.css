@@ -1,0 +1,253 @@
+:root {
+    --darkblue: #0f1d30;
+    --darkblueOpacity: #0f1d30e5;
+    --white: #ffffff;
+    --cyan: #7E7F9A;
+    --cyanOpacity: #7E7F9Ad2;
+    --greyish: #e6e6e6;
+    --grey: #888888;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('../assets/background.jpg'); */
+    background-color: var(--darkblue);
+    color: var(--darkblue);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+nav {
+    width: 100%;
+    padding: 1.5%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    background-color: var(--darkblueOpacity);
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    min-width: 20px;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0px 50px 0px 50px;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin-top: 5%;
+    width: 75%;
+    padding: 15px;
+    background-color: var(--greyish);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#titleWrap {
+    margin-bottom: 2%;
+}
+
+.ityped {
+    font-weight: 400;
+    text-align: center;
+    font-size: 4em;
+}
+
+.ityped-cursor {
+    font-weight: 400;
+    font-size: 4em;
+    opacity: 1;
+    -webkit-animation: blink 0.6s infinite;
+    -moz-animation: blink 0.6s infinite;
+    animation: blink 0.6s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+#pfpic {
+    display: flex;
+    justify-content: center;
+}
+
+#pfpic img {
+    border-radius: 500px;
+    width: 15%;
+    height: auto;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: var(--grey);
+    width: 15%;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+#subtitle {
+    color: var(--grey);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px
+}
+
+.container {
+    position: relative;
+    width: fit-content;
+    height: auto;
+}
+
+.image {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--darkblue);
+}
+
+.container:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#progressWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50px, 1fr);
+    text-align: left;
+}
+
+#progressWrapper label {
+    font-weight: 400;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 0.5%;
+}
+
+.progressBar[value] {
+    width: 90%;
+    height: 20px;
+    justify-self: center;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progressBar[value]::-webkit-progress-bar {
+    background-color: var(--white);
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progressBar[value]::-webkit-progress-value {
+    background-color: var(--cyan);
+    box-shadow: 0 2px 5px var(--cyanOpacity) inset;
+    border-radius: 50px;
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 950px) {
+    #logo {
+        display: none;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    nav a {
+        min-width: 0px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    #pfpic img {
+        width: 45%;
+    }
+
+    .ityped {
+        font-size: 1.7em;
+    }
+
+    .ityped-cursor {
+        font-size: 1.7em;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        width: 95%;
+    }
+}
