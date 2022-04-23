@@ -22,6 +22,17 @@ body {
     font-weight: 300;
 }
 
+#about{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+
+#aboutTitle{
+    text-align: center;
+}
+
 nav {
     width: 100%;
     padding: 1.5%;
