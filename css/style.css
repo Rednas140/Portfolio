@@ -47,12 +47,6 @@ nav a:hover {
     color: var(--cyan);
 }
 
-#logo {
-    font-family: rig-solid-bold-fill, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 #content {
     display: flex;
     justify-content: center;
