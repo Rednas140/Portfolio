@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -22,14 +26,14 @@ body {
     font-weight: 300;
 }
 
-#about{
+.textClass{
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
 }
 
 
-#aboutTitle{
+.titleClass{
     text-align: center;
 }
 

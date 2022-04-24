@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <nav>
-        <a id="logo">Sander</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+    <nav id="navBar">
+        <a id="homeNav">Sander</a>
+        <a id="aboutNav">About</a>
+        <a id="projectsNav">Projects</a>
+        <a id="contactNav">Contact</a>
     </nav>
     <div id="content">
         <section>
@@ -32,16 +32,30 @@
                 Creative media & game technologies
             </p>
 
-            <article id="about">
-                <h2 id="aboutTitle">About me</h2>
-                <p>Hi there, my name is Sander Verhoeven. At the moment i'm a student at the University of Applied
-                    Sciences in Rotterdam and studying Creative Media and Game Technologies. I have a bunch of different
-                    interests, but the ones that I like the most are playing video games, vibing to music and watching
-                    shows on whatever service available. The traits that would describe me best, would be critical and
-                    curious.
+            <article id="about" class="textClass">
+                <h2 class="titleClass">About me</h2>
+                <p>
+                    Hi there, my name is Sander Verhoeven. At the moment I'm a student at the University of Applied
+                    Sciences in Rotterdam and studying Creative Media and Game Technologies. I've got a bunch of
+                    different interests, but the ones that I interest me the most are playing video games, listening to
+                    music and
+                    watching a bunch of shows.
+                </p>
+                <p>
+                    As long as I can remember I've had a passion for technology and discovering new
+                    things, it started with a bunch of video game stuff like the Nintendo DS and a PS3. In highschool
+                    this evolved into a passion for programming and making my own websites, this passion has kept on
+                    evolving and was the main reason for choosing my current study
                 </p>
             </article>
 
+            <article class="textClass">
+                <h2 class="titleClass">My skillset</h2>
+                <p>
+                </p>
+                <p>
+                </p>
+            </article>
             <div id="progressWrapper">
                 <label for="html">HTML:5</label>
                 <progress class="progressBar" id="html" max="100" value="80"></progress>
@@ -59,7 +73,7 @@
                 <progress class="progressBar" id="Typescript" max="100" value="60"></progress>
             </div>
 
-            <h2>My projects</h2>
+            <h2 id="projects" class="titleClass">My projects</h2>
             <div class="projects">
                 <div class="container">
                     <img src="./assets/project1.jpg" alt="project 1" class="image">
