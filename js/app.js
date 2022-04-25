@@ -3,7 +3,7 @@ let aboutNav = document.getElementById("aboutNav");
 let projectsNav = document.getElementById("projectsNav")
 let contactNav = document.getElementById("contactNav")
 
-
+//making the elements clickable
 homeNav.addEventListener("click", function () {
     toTop(homeNav.innerHTML);
 });
@@ -19,25 +19,27 @@ contactNav.addEventListener("click", function () {
 
 // When the user clicks on the button, scroll to the top of the document
 function toTop(name) {
+    // getting the height of the navbar
     let height = document.querySelector('#navBar').offsetHeight
-    console.log(height)
+
+    // checking if the name lines up with expected value
     switch (name) {
         case 'Sander':
             let content = document.getElementById("content")
             let contentPos = content.offsetTop
-            window.scrollTo(0,  contentPos);
+            window.scrollTo(0, contentPos);
             break;
 
         case 'About':
             let about = document.getElementById("about")
             let aboutPos = about.offsetTop - height;
-            window.scrollTo(0,  aboutPos);
+            window.scrollTo(0, aboutPos);
             break;
 
         case 'Projects':
             let projects = document.getElementById("projects")
             let projectsPos = projects.offsetTop - height;
-            window.scrollTo(0,  projectsPos);
+            window.scrollTo(0, projectsPos);
             break;
 
         case 'Contact':
@@ -47,11 +49,8 @@ function toTop(name) {
         default:
             console.log('no')
             break;
+
     }
-    // window.scrollTo({
-    //     top: 0,
-    //     behavior: 'smooth'
-    // });
 }
 
 // used for the typing animation
